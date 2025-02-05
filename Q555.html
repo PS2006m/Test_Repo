@@ -1,0 +1,31 @@
+<!--Write a JavaScript that uses function to calculate how many days are left in
+your birthday?-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var day=prompt("Enter day of ur birthday")
+        var month=prompt("Enter month of ur birthday")
+        var currentDate=new Date()
+        var cDay=currentDate.getDate()
+        var cMonth=currentDate.getMonth()
+        if(month>=cMonth){
+            if(day>=cDay){
+                document.write(`Days left in your birthday are ${day-cDay}`)
+            }
+            else{
+                document.write(`Days left in your birthday are ${365-(cDay-day)}`)
+            }
+        }
+        else{
+            document.write(`Days left in your birthday are ${365-(cDay-day)}`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

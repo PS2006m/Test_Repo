@@ -1,0 +1,35 @@
+<!--write a JS that find position of first occurance of vowel "a" and last
+occurance of vowel "a" in given word.return the string between them.for ex:-
+string is- "ajanta"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Substring</title>
+    <script>
+        function firstLastSubstring(word) {
+            // Find the first and last occurrence of 'a'
+            const firstIndex = word.indexOf('a');
+            const lastIndex = word.lastIndexOf('a');
+
+            // If 'a' is not found, return a message
+            if (firstIndex === -1 || lastIndex === -1) {
+                return "The letter 'a' does not exist in the given string.";
+            }
+
+            // Return the substring between the first and last 'a'
+            return word.substring(firstIndex, lastIndex + 1);
+        }
+
+        // Example usage:
+        const inputString = prompt("Enter a word:");
+        const result = firstLastSubstring(inputString);
+        console.log(result); // Output the result in the console
+        alert(result); // Show result in an alert
+    </script>
+</head>
+<body>
+    <h1>Check the Console or Alert for Output</h1>
+</body>
+</html>

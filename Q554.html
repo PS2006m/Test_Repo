@@ -1,0 +1,27 @@
+<!--Write Java Script for find first 10 prime numbers-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for(i=1;i<=100;i++){
+            a=Math.floor(i/2)
+            check=true
+            for(j=2;j<=a;j++){
+                if(i%j==0){
+                    check=false;
+                    break
+                }
+            }
+            if(check){
+                document.write(i+"<br>")
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

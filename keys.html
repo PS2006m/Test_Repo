@@ -1,0 +1,12 @@
+<html><head>
+    <script type="text/javascript">
+    function fun2(e){
+    c= (e.key);
+    if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u' || c=='A' || c=='E' || c=='I' ||
+    c=='O' || c=='U') {
+    document.write("vowel is entered "+e.keyCode+" "+ e.key); }
+    else { document.write(e.keyCode+" "+ e.key); }
+    }
+    </script>
+    </head>
+    <body onkeypress="fun2(event)"></body></html>

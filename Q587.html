@@ -1,0 +1,32 @@
+<!--Write a JavaScript to handle following mouse events.
+i.If mouse clicked on heading, content of heading changed to “Hello World”
+with italic effect & 50px size.
+ii.If button named red is clicked then heading should change to red color
+& button named blue is clicked then heading should change to blue color.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function clicking(){
+            document.getElementById("mouseclick").innerHTML="Hello World"
+
+        }
+        function red(){
+            document.getElementById("mouseclick").style.color="red"
+        }
+        function blue(){
+            document.getElementById("mouseclick").style.color="blue"
+        }
+    </script>
+    <div style="height:200px;width:200px">
+        <h1 onclick="clicking()" id="mouseclick">This is before click</h1>
+        <button onclick="red()">Red</button>
+        <button onclick="blue()">Blue</button>
+    </div>
+</body>
+</html>

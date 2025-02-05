@@ -1,0 +1,28 @@
+<!--Write a JS to solve following series by given x and n values from user: 1-
+x+x2
+-x
+3+x4
+-x
+5+...+xn-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function series(x,n){
+            sum=0
+            for(a=1;a<=n;a++){
+                sum+=Math.pow(x,a)
+            }
+            return sum
+        }
+        v1=prompt("Enter value of x")
+        v2=prompt("Enter value of n")
+        document.write("Series answer is "+series(v1,v2))
+    </script>
+</body>
+</html>

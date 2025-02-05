@@ -1,0 +1,40 @@
+<!--write a JS to find that given no. is lucky number or not.
+i.e. Given no is lucky if sum of all its digit is equal to 1.
+for ex. 7777 = 7+7+7+7 = 28 => 2+8=10 => 1+0=1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function lucky(num){
+            do{
+                sum=0
+                n=num;
+                while(n!=0){
+                    a=n%10
+                    sum+=a
+                    n=Math.floor(n/10)
+                }
+                if(sum==1){
+                    console.log("Yes , num is lucky")
+                    break
+                }
+                else if(sum==0){
+                    console.log("No,num is not lucky")
+                    break
+                }
+                else{
+                    num=sum
+                }
+        }while(true)
+    }
+    userIN=parseInt(prompt("Enter number"))
+    lucky(userIN)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

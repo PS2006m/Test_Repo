@@ -1,0 +1,23 @@
+<html><head>
+    <script type="text/javascript">
+        function demo(){
+            p1=document.getElementsByTagName("p")
+            p1[0].innerHTML="Changed text by element name"
+            p1[0].style.fontSize="30px"
+            p2=document.getElementsByClassName("pc")
+            p2[0].innerHTML="Changed text by class name"
+            p2[0].style.backgroundColor="yellow"
+            p2[0].style.fontSize="100px"
+            p3=document.getElementById("p1")
+            p3.innerHTML="Changed text by id"
+            p3.style.backgroundColor="cyan"
+            p3.style.fontSize="20px"
+        }
+    </script>
+    </head>
+    <body>
+    <p>P tag 1</p>
+    <p class="pc">P tag 2</p>
+    <p id="p1">P tag 3</p>
+    <input type="button" onclick="demo();" value="CLICK"/>
+    </body></html>

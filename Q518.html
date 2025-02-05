@@ -1,0 +1,27 @@
+<!--Create a function that takes an array of objects (groceries) which calculates
+the total price and returns it as a number. A grocery object has a product, a
+quantity and a price.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function arraygrocc(groceries){
+            sum=0
+            for(i in groceries){
+                sum+=groceries[i].price
+            }
+            return sum
+        }
+        var g=[
+            {"product":"apple","quantity":20,"price":100},
+            {"product":"banana","quantity":10,"price":200}
+        ]
+        console.log("Sum is "+arraygrocc(g))
+    </script>
+</body>
+</html>
